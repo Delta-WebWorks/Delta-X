@@ -2,6 +2,7 @@ import React,{Component} from 'react';
 import { BrowserRouter, Route, Switch} from 'react-router-dom';
 
 import landing from './components/landing/landing';
+import aboutus from './components/aboutus/aboutus';
 
 class App extends Component {
 
@@ -17,6 +18,7 @@ class App extends Component {
       <BrowserRouter>
         <div>
           <Switch>
+            <Route path="/about-us" component={aboutus} exact/>
             <Route path="/" component={landing} exact/>
           </Switch>
         </div>
